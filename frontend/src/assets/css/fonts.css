@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/UbuntuMono-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/UbuntuMono-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ComicRelief';
+  src: url('../fonts/ComicRelief-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ComicRelief';
+  src: url('../fonts/ComicRelief-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('../fonts/Caveat.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

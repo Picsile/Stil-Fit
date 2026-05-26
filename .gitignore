@@ -1,0 +1,41 @@
+# Окружение
+.env
+.env.*
+!.env.example
+
+# БД дамп
+*.sql
+
+# Загрузки пользователей
+backend/web/uploads/
+
+# Логи
+backend/runtime/logs/
+backend/runtime/cache/
+backend/runtime/debug/
+
+# Вендоры
+backend/vendor/
+frontend/node_modules/
+
+# Сборка фронта
+frontend/dist/
+frontend/dist-ssr/
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Документация / черновики
+info/
+*.docx
+*.txt
+
+# Прочее
+*.log

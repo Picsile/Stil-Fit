@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+@import './root.css';
+@import './base.css';
+@import './fonts.css';
+
+/* Buttons */
+/* Только иконка */
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 2.8rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: var(--speed-transition);
+}
+
+/* Иконка + текст */
+.btn-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 3rem;
+  height: 2.8rem;
+  padding: 0 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: var(--speed-transition);
+}
+
+/* Свободно растягивается по содержимому */
+.btn-fit {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: var(--speed-transition);
+}
+
+/* Растягивается на всю ширину */
+.btn-list {
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 2.8rem;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: var(--speed-transition);
+}
+
+/* Кнопка в инпуте */
+.btn-in-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  height: calc(var(--h-header) - 0.5rem);
+  border-radius: 0.75rem;
+  transition: var(--speed-transition);
+}
+
+.btn-in-input:hover {
+  background-color: var(--color-hover-input);
+}
+
+/* Прозрачная кнопка */
+.btn-opacity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  background-color: color-mix(
+    in srgb,
+    var(--color-main-panel),
+    transparent 60%
+  );
+  backdrop-filter: blur(50px);
+  border-radius: 0.75rem;
+  transition: var(--speed-transition);
+  cursor: pointer;
+}
+
+.btn-opacity:hover {
+  background-color: color-mix(in srgb, var(--color-hover), transparent 65%);
+}
+
+/* Прозрачная кнопка dark */
+.btn-opacity-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  background: color-mix(in srgb, var(--color-dark), transparent 40%);
+  backdrop-filter: blur(1px);
+  font-weight: 400 !important;
+  color: var(--color-main-panel);
+  border-radius: 0.75rem;
+  transition: var(--speed-transition);
+  cursor: pointer;
+}
+
+.btn-opacity-dark:hover {
+  background: color-mix(in srgb, var(--color-dark), transparent 30%);
+}
+
+/* Иконка + текст с тёмной заливкой */
+.btn-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.8rem;
+  background-color: var(--color-dark);
+  color: white;
+  padding: 0 1rem;
+  border-radius: 0.75rem;
+  transition: var(--speed-transition);
+  cursor: pointer;
+}
+
+.btn-dark:hover {
+  background-color: var(--color-hover-dark);
+}
+
+.btn-icon-accent-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 2.8rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: var(--speed-transition);
+}
+
+.btn-icon-accent-hover:hover {
+  background-color: var(--color-brend-light);
+  color: var(--color-brend-simple);
+}
+
+/* Акцентная кнопка */
+.btn-accent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 3rem;
+  height: 2.8rem;
+  padding: 0 1rem;
+  border-radius: 0.75rem;
+  background-image: var(--color-brend);
+  color: white;
+  transition: var(--speed-transition);
+  cursor: pointer;
+}
+
+.btn-accent:hover {
+  background-image: var(--color-hover-brend);
+}
+
+/* Интерактив */
+.btn-icon:hover,
+.btn-default:hover,
+.btn-list:hover,
+.btn-fit:hover {
+  background-color: var(--color-hover);
+}
+
+.btn-icon:active,
+.btn-default:active,
+.btn-list:active,
+.btn-fit:active,
+.btn-in-input:active,
+.btn-dark:active,
+.btn-opacity:active,
+.btn-opacity-dark:active,
+.btn-accent:active {
+  scale: 0.9;
+}
+
+/* Особое */
+.btn-list span,
+.btn-opacity span {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Modal animations */
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}

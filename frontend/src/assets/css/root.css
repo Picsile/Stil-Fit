@@ -1,0 +1,51 @@
+:root {
+  --color-bg: white;
+  /* --color-bg: rgb(240, 242, 252); */
+
+  --color-main-panel: white;
+  --color-main-panel-dark: rgb(240, 240, 240);
+
+  --color-border: rgb(218, 218, 230);
+  /* --color-border: var(--color-input); */
+
+  --color-text: black;
+  --color-text-second: rgb(105, 105, 105);
+
+  --color-btn: rgb(214, 214, 214);
+
+  --color-input: #e8ebf0;
+  --color-input-on-bg: #edf0f5;
+
+  --color-bg-image: var(--color-input);
+
+  --shadow-base: rgba(0, 0, 0, 0.1) 0px 2px 10px -4px;
+  --shadow-light: rgba(0, 0, 0, 0.05) 0px 1px 5px 1px;
+  --shadow-modal: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+
+  /* Интерактив */
+  --color-hover: #f1f4f9;
+  --color-hover-input: #e3e6eb;
+  --color-hover-dark: rgb(69, 69, 69);
+
+  --color-load: rgba(255, 255, 255, 0.5);
+
+  /* Цветовая палитра */
+  --color-dark: rgb(37, 37, 37);
+  --color-blue: rgba(82, 82, 255, 1);
+  /* --color-blue: #3498db; */
+  --colot-blue-light: rgba(237, 239, 252, 1);
+
+  --color-brend-bg: #f5f4f7;
+  --color-brend-light: rgb(241, 239, 255);
+  --color-brend-simple: #7e6afe;
+  --color-brend: linear-gradient(135deg, #8e7bfe 0%, #6a53fe 100%);
+  --color-hover-brend: linear-gradient(135deg, #816fe6 0%, #604be6 100%);
+  --color-brand-light: #dfd6ff;
+
+  /* Размеры */
+  --w-navbar: 4.475rem;
+  --h-header: 3rem;
+
+  /* Прочее */
+  --speed-transition: 0.2s;
+}

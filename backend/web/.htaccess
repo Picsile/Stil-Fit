@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^/backend/(.+)$
+RewriteCond %{DOCUMENT_ROOT}/%1 -f
+RewriteRule ^backend/(.*)$ /$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
